@@ -10,7 +10,7 @@ const CardComp = (props) => {
         <div className="cardKasus" id={props.id}>
             <h2 id="headKasus">{props.headKasus}</h2>
             <span className="jumlahKasus">
-                <p className="kasusIndo">{props.jumlahKasus}</p>
+                <p className="kasusIndo kasusIndo2">{props.jumlahKasus}</p>
             </span>
             <div className="roundCard">
               {/* <FontAwesomeIcon icon={props.ikon} /> */}

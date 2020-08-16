@@ -47,9 +47,9 @@ const CardIndo = (props) => {
           <Card body inverse id={props.id} className="car1 cardKasus">
             <h2 id="headKasus">Dunia</h2>
             <span className="jumlahKasus">
-              <p className="kasusIndo">Meninggal : 768,969</p>
-              <p className="kasusIndo">Positif : 21,615,334</p>
-              <p className="kasusIndo">Sembuh : 14,329,742</p>
+              <p className="kasusIndo kasusIndo1">Meninggal : 768,969</p>
+              <p className="kasusIndo kasusIndo1">Positif : 21,615,334</p>
+              <p className="kasusIndo kasusIndo1">Sembuh : 14,329,742</p>
             </span>
             <div className="roundCard" id="roundCard1">
               <img className="ikonKasus" src={props.ikon}/>

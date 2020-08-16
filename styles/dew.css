@@ -135,7 +135,7 @@ img.imgBawah{
   height: 150px;
 }  
 .cardKasus{
-  box-shadow: inset 4.26875px 4.26875px 2.84583px #C5C5C5, inset -4.26875px -4.26875px 2.84583px #FFFFFF;
+  /* box-shadow: inset 4.26875px 4.26875px 2.84583px #C5C5C5, inset -4.26875px -4.26875px 2.84583px #FFFFFF; */
   height: 135px;
   border-radius: 21.3438px;
   /* background: red; */
@@ -184,17 +184,24 @@ img.imgBawah{
   position: relative;
   margin: 0px;
 }
-
+ 
 
 .kasusIndo{
 left: 44.82px;
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
-font-size: 18.4979px;
 line-height: 6px;
 color: #000000;
 } 
+
+.kasusIndo1{
+  font-size: 16px;
+}
+ 
+.kasusIndo2{
+  font-size: 20px;
+}
  
 .jumlahKasus{
   position: relative;
@@ -210,7 +217,7 @@ color: #000000;
   align-items: center;
   width: 50px;
   height: 50px; 
-  left: 164.27px;
+  left: 160px;
   background: #E9EBEF;
   box-shadow: inset 2.84583px 2.84583px 2.84583px #C5C5C5, inset -2.84583px -2.84583px 2.84583px #FFFFFF;
 }
@@ -297,6 +304,16 @@ color: #000000;
   color: black;
 }
 
+
+
+.chartCase{
+  margin-top: 30px;
+}
+
+.chartCase .app__graph canvas{
+  /* background: green; */
+  /* height: 300px !important; */
+}
 
 
 @media only screen and (min-width: 1070px) {

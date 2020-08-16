@@ -14,6 +14,7 @@ import SideCompDew from './components/SideCompDew';
 import numeral from "numeral";
 import InfoBoxku from './components/infoBox';
 import LineGraph from './components/LineGraph';
+import Tableku from './components/Table';
 
 const persebaranDew = () => {
   const [countries, setCountries] = useState([]);
@@ -142,13 +143,20 @@ const sortData = (data) => {
                     total={prettyPrintStat(countryInfo.deaths)}/>
 
                   </div>
+                  <hr/>
+                  <div className="chartCase">
+                    <h3 className="app__graphTitle">Pertumbuhan di dunia berdasarkan {casesType}</h3>
+                    <LineGraph className="app__graph" casesType={casesType}/>
+                  </div>
               </div>
 
               <Card className="app__right">
               <CardContent>
-                <h3>Pertumbuhan kasus</h3>
-                  <h3 className="app__graphTitle">{casesType}</h3>
-                <LineGraph className="app__graph" casesType={casesType}/>
+                <h3>Kasus berdasarkan Negara</h3>
+                <Tableku countries={tableData}/>
+                {/* <hr/>
+                  <h3 className="app__graphTitle">Pertumbuhan berdasarkan {casesType}</h3>
+                <LineGraph className="app__graph" casesType={casesType}/> */}
               </CardContent>
             </Card>
             </div>

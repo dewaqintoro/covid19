@@ -31,7 +31,7 @@ const CardCompDew = (props) => {
         
         <h2 id="headKasus">{props.headKasus}</h2>
         <span className="jumlahKasus">
-         <p className="kasusIndo">{props.jumlahKasus}</p>
+         <p className="kasusIndo kasusIndo2">{props.jumlahKasus}</p>
         </span>
         {/* <img id="imgPositif" src="https://res.cloudinary.com/dewaqintoro/image/upload/v1597233852/icon/efek_hrhw3p.png"/> */}
         <div className="roundCard">
