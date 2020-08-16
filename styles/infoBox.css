@@ -1,0 +1,48 @@
+.infoBox {
+  flex: 1;
+  cursor: pointer;
+}
+
+.infoBox:not(:last-child) {
+  margin-right: 10px;
+} 
+  
+.infoBox--selected {
+  border-top: 10px solid #c1c4c2;
+} 
+
+.infoBox--red {
+  /* border-color: #F3D250; */
+  /* border-color: #f350d8; */
+
+}
+
+.infoBox__cases--green {
+  color: lightgreen !important;
+}
+
+.infoBox__cases {
+  color: #000000;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.infoBox__total {
+  color: #000000;
+  font-weight: 700 !important;
+  font-size: 0.8rem !important;
+  margin-top: 15px !important;
+}
+
+.app__stats .casesStat{
+  background: #F78888;
+}
+
+.app__stats .recoveredStat{
+  background: #5DA2D5;
+}
+
+.app__stats .deathsStat{
+  background: #F3D250;
+}

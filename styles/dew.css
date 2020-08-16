@@ -1,0 +1,326 @@
+:root {
+  --backgroundColor: #f7f7f7;
+  --primaryColor: #191a1b;
+  --textColorSecondary: rgba(0, 0, 0, 0.45);
+}
+
+.ant-layout-sider{
+  background: #5DA2D5;
+  box-shadow: 0px 2.84583px 28.4583px #C5C5C5;
+  /* position: fixed;
+  height: 100%; */
+}
+ 
+/* .side{
+  background: #F1F3F6 !important;
+  box-shadow: 0px 2.84583px 28.4583px #C5C5C5 !important;
+  height: 100%;
+} */
+
+.ant-menu,.ant-menu-dark,.ant-menu-root,.ant-menu-inline{
+  background: #5DA2D5 !important;
+  /* box-shadow: 0px 2.84583px 28.4583px #C5C5C5 !important; */
+}
+
+li{
+  color: black !important;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+}
+
+.profil{
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 94px;
+  height: 194px;
+  top: 20px;
+}
+
+img#imgProfil{
+  box-shadow: -2.13438px -2.13438px 7.11458px rgba(255, 255, 255, 0.8), 2.13438px 2.13438px 5.69167px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  width: 94px;
+}
+
+p#username{
+  position: relative;
+  width: 119.53px;
+  height: 23.48px;
+  text-align: left;
+  left: -12%;
+  top: 15.3px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.9208px;
+  line-height: 23px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+ 
+p#id{
+  position: relative;
+  width: 81.11px;
+  height: 16.36px;
+  left: 0%;
+  top: 0px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14.2292px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #504f4f; 
+}
+
+
+.bawahContainer{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  top: 45vh;
+  /* background: red; */
+}
+
+.bawah{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  margin: 0 10px;
+  cursor: pointer;
+  /* top: 590px; */
+  background: #5DA2D5;
+  box-shadow: -4.26875px -4.26875px 14.2292px #70B8EE, 2.13438px 2.13438px 14.2292px #557C8C;
+  border-radius: 28.4583px;
+}
+ 
+#setting{
+  /* left: 41.26px; */
+}
+
+#logout{
+  /* left: 136.6px; */
+}
+
+img.imgBawah{
+  width: 40px;
+}
+
+
+
+
+
+
+
+
+/* main content */
+.card1{
+  position: relative;
+  display: flex;
+  height: 150px;
+}  
+.cardKasus{
+  box-shadow: inset 4.26875px 4.26875px 2.84583px #C5C5C5, inset -4.26875px -4.26875px 2.84583px #FFFFFF;
+  height: 135px;
+  border-radius: 21.3438px;
+  /* background: red; */
+  
+}
+ 
+#idIndo{
+  background: #90CCF4;
+  border-radius: 21.3438px;
+  /* height: 135px; */
+  /* height: 135px;
+  box-shadow: inset 4.26875px 4.26875px 2.84583px #C5C5C5, inset -4.26875px -4.26875px 2.84583px #FFFFFF;
+  border-radius: 21.3438px; */
+}
+
+#idPositif{
+  /* background-image: url("https://res.cloudinary.com/dewaqintoro/image/upload/v1597233852/icon/efek_hrhw3p.png") no-repeat; */
+  background: #F3D250; 
+  border-radius: 21.3438px;
+  
+}
+
+#imgPositif{
+  position: relative;
+  width: 110%;
+  left: -10px;
+  top: -5px;
+}
+
+#idSembuh{
+  background: #5DA2D5;
+  border-radius: 21.3438px;
+}
+
+#idMeninggal{
+  background: #F78888;
+  border-radius: 21.3438px;
+}
+
+
+.cardKasus2{
+  left: 40px;
+}
+
+#headKasus{
+  position: relative;
+  margin: 0px;
+}
+
+
+.kasusIndo{
+left: 44.82px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18.4979px;
+line-height: 6px;
+color: #000000;
+} 
+ 
+.jumlahKasus{
+  position: relative;
+  top: 10px;
+  margin: 0px;
+} 
+
+.roundCard{
+  position: relative;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px; 
+  left: 164.27px;
+  background: #E9EBEF;
+  box-shadow: inset 2.84583px 2.84583px 2.84583px #C5C5C5, inset -2.84583px -2.84583px 2.84583px #FFFFFF;
+}
+ 
+#roundCard1{
+  position: relative;
+  top: -50%;
+}
+
+ 
+#positif{
+  position: relative;
+  width: 240.47px;
+  height: 150.1px;
+  left: 37.04px;
+  top: 40.24px;
+
+  background: #E9EBEF;
+  box-shadow: inset 4.26875px 4.26875px 2.84583px #C5C5C5, inset -4.26875px -4.26875px 2.84583px #FFFFFF;
+  border-radius: 21.3438px;
+}
+
+.ikonKasus{
+  width: 50px;
+  height: 50px;
+}
+
+ 
+.satu1{
+  /* background: grey; */
+  /* text-align: center; */
+}
+
+.car{
+  padding: 0px 5px;
+  /* background: white; */
+}
+
+.dua2{
+  margin-top: 40px;
+}
+
+
+.tabelku{
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.topTable{
+  position: relative;
+  float: none;
+  padding: 15px 0;
+  left: 15px;
+  background: #5DA2D5;
+  /* margin-top: 20px; */
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  
+}
+
+
+.ant-layout-sider-children ul.ant-menu li.ant-menu-item-active{
+  background: rgb(68, 174, 223) ;
+  color: black;
+}
+
+.ant-layout-sider-children ul.ant-menu li.ant-menu-item-active a:hover{
+  /* background: rgb(68, 174, 223) ; */
+  color: black;
+}
+
+.ant-layout-sider-children ul.ant-menu li.ant-menu-item-selected{
+  background: #5DA2D5;
+  /* biru atas */
+
+  box-shadow: -4.26875px -4.26875px 14.2292px #70B8EE, 2.13438px 2.13438px 14.2292px #557C8C;
+  border-radius: 28.4583px;
+  width: 90%;
+  margin-left: 5%;
+  color: black;
+}
+
+.ant-layout-sider-children ul.ant-menu li.ant-menu-item-selected a{
+  color: black;
+}
+
+
+
+@media only screen and (min-width: 1070px) {
+  .kasusIndo{
+    /* font-size: 14.4979px; */
+  }
+}
+
+@media only screen and (max-width: 986px) {
+  /* .card1{
+    display: block;
+  } */
+
+  #headKasus{
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #headKasus{
+    font-size: 16px;
+  }
+
+  .tabelku th{
+    font-size: 10px;
+  }
+}

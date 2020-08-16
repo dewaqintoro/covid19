@@ -1,0 +1,109 @@
+.formDew #loginDew {
+  /* border: 2px solid red; */
+  width: 300px;
+  /* background: blue; */
+  
+}
+
+.formDew{
+  /* background: grey; */
+  display: flex;
+  justify-content: center;
+}
+.formDew .login-form-forgot {
+  float: right;
+}
+.formDew .ant-col-rtl .login-form-forgot {
+  float: left;
+}
+.formDew .login-form-button {
+  width: 100%;
+}
+ 
+ 
+.login-form .ant-row .ant-col .ant-form-item-control-input .ant-form-item-control-input-content .login-form-button{
+  background: #5DA2D5;
+}
+
+.loginku{
+  /* height: 100%; */
+/* background: blue; */
+/* margin-top: 50%; */
+margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+body{
+  /* background: greenyellow; */
+  /* display: flex;
+  justify-content: center; */
+  position: relative;
+}
+.formAuth{ 
+  /* background-color: greenyellow; */
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.formAuth img{
+  margin: 0 10px;
+}
+
+.iconGoogle{
+  width: 48px;
+  height: 48px;
+}
+
+.iconAuth{
+  height: 20px;
+  background: red;
+}
+
+
+/* .yourAccount{
+  text-align: center;
+} */
+
+
+.regis{
+  float: right;
+}
+
+
+.formReg{
+  /* border: 1px solid greenyellow; */
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.formReg #regDew {
+  /* border: 2px solid red; */
+  max-width: 600px;
+  padding: 20px;
+  /* background: rgb(215, 215, 255); */
+  
+}
+ 
+.mauLogin{
+  float: right;
+}
+
+.headReg{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.kekLogin{
+  cursor: pointer;
+}

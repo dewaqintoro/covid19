@@ -1,0 +1,2 @@
+  // "proxy":"https://api.kawalcorona.com",
+  // "proxy":"http://localhost:3000/admin",

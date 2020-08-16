@@ -1,0 +1,455 @@
+
+
+div{
+  padding: 0;
+  margin: 0;
+}
+
+.side{
+  /* position: absolute; */
+  /* display: flex; */
+  /* width: 200px; */
+  /* height: 660.38px; */
+  left: 0px;
+  top: 0px;
+  background: #5DA2D5;
+  box-shadow: 0px 2.84583px 28.4583px #C5C5C5;
+
+  height: 100%;
+  width: 234.78px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /* background-color: #111; */
+  overflow-x: hidden;
+  /* padding-top: 20px; */
+}
+
+#profil{
+  position: relative;
+  width: 94px;
+  height: 94px;
+  left: 70.43px;
+  top: 20px;
+  border-radius: 50px;
+  background: #5DA2D5;
+  box-shadow: inset -4px -4px 12px #70B8EE, inset 2px 2px 14px #557C8C;
+}
+
+p#username{
+  position: relative;
+  width: 119.53px;
+  height: 23.48px;
+  left: 57.63px;
+  top: 35.3px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.9208px;
+  line-height: 23px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+p#id{
+  position: relative;
+  width: 81.11px;
+  height: 16.36px;
+  left: 76.84px;
+  top: 25.05px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14.2292px;
+  line-height: 17px;
+
+  color: #828282;
+}
+
+#textSide{
+  position: relative;
+  left: 66px;
+  top: 6px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.9208px;
+  color: #000000;
+}
+
+.menu{
+  /* background: red; */
+  position: fixed;
+  height: 100%;
+  width: 234.78px;
+  margin-top: 50px;
+}
+.bgMenu{
+  position: relative;
+  display: flex;
+  top: 10px;
+  width: 199.21px;
+  height: 40px;
+  left: 17.79px;
+  margin-bottom: 15px;
+  background: #5DA2D5;
+  text-decoration: none;
+  /* box-shadow: -4.26875px -4.26875px 14.2292px #FFFFFF, 2.13438px 2.13438px 14.2292px #C5C5C5; */
+  box-shadow: -4.26875px -4.26875px 14.2292px #70B8EE, 2.13438px 2.13438px 14.2292px #557C8C;
+  border-radius: 28.4583px;
+}
+
+.bgMenu:hover{
+  text-decoration: none;
+  box-shadow: inset -2px -2px 8px rgb(122, 161, 247),
+              inset -2px -2px 12px rgba(255,255,255,0.5),
+              inset 2px 2px 4px rgba(255,255,255,0.1),
+              inset 2px 2px 8px rgba(0,0,0,0.15);
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+/* #bgKasus{
+  top: 9.43px;
+}
+
+#bgPengguna{
+  top: 25.43px;
+} */
+
+.listMenu{
+  position: relative;
+  left: 17.79px;
+  top: 97px;
+}
+
+/*  
+#bgPersebaran{
+  top: 40.43px;
+} */
+
+/* #bgPersebaran2{
+  position: relative;
+  left: 17.79px;
+  top: 95px;
+} */
+
+
+p#income{
+  position: absolute;
+  width: 66.88px;
+  height: 23.48px;
+  left: 83.95px;
+  top: 421.18px;
+ 
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.9208px;
+  line-height: 23px;
+
+  color: #000000;
+}
+
+.bawahContainer{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  top: 200px;
+  /* background: red; */
+}
+
+.bawah{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  margin: 0 10px;
+  cursor: pointer;
+  /* top: 590px; */
+  background: #5DA2D5;
+  box-shadow: -4.26875px -4.26875px 14.2292px #70B8EE, 2.13438px 2.13438px 14.2292px #557C8C;
+  border-radius: 28.4583px;
+}
+ 
+#setting{
+  /* left: 41.26px; */
+}
+
+#logout{
+  /* left: 136.6px; */
+}
+
+ 
+.card1{
+  position: relative;
+  display: flex;
+  width: 1067.19px;
+  height: 150px;
+  left: 266.8px;
+  top: 10.84px;
+
+  /* background: #90CCF4; */
+  /* box-shadow: -11.3833px -11.3833px 28.4583px #FFFFFF, 4.26875px 4.26875px 28.4583px #C5C5C5;
+  border-radius: 21.3438px; */
+}
+
+
+
+.cardKasus{
+  position: relative;
+  width: 240.47px;
+  height: 135px;
+  left: 27.04px;
+  top: 7px;
+  margin-right: 20px;
+  
+  /* background: #90CCF4; */
+  /* background-image: url("https://res.cloudinary.com/dewaqintoro/image/upload/v1596798640/icon/bg_smkno8.png"); */
+  box-shadow: inset 4.26875px 4.26875px 2.84583px #C5C5C5, inset -4.26875px -4.26875px 2.84583px #FFFFFF;
+  border-radius: 21.3438px;
+}
+
+#idIndo{
+  background: #90CCF4;
+}
+
+#idPositif{
+  background: #F3D250; 
+
+}
+
+#idSembuh{
+  background: #5DA2D5;
+}
+
+#idMeninggal{
+  background: #F78888;
+}
+
+
+.cardKasus2{
+  left: 40px;
+}
+
+#headKasus{
+  position: relative;
+  margin: 0px;
+  top: 10px;
+  left: 17.79px;
+}
+
+
+.kasusIndo{
+left: 44.82px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+/* font-size: 18.4979px; */
+line-height: 6px;
+color: #000000;
+}
+
+/* img#bgIndo{
+  position: absolute;
+  top: -30px;
+} */
+
+.jumlahKasus{
+  position: relative;
+  top: 20px;
+  margin: 0px;
+  left: 17.79px;
+} 
+
+.roundCard{
+  position: relative;
+  border-radius: 50px;
+  /* background: #73AD21; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px; 
+  left: 164.27px;
+  background: #E9EBEF;
+  box-shadow: inset 2.84583px 2.84583px 2.84583px #C5C5C5, inset -2.84583px -2.84583px 2.84583px #FFFFFF;
+}
+
+.roundCard1{
+  top: -45px;
+}
+
+ 
+#positif{
+  position: relative;
+  width: 240.47px;
+  height: 150.1px;
+  left: 37.04px;
+  top: 40.24px;
+
+  background: #E9EBEF;
+  box-shadow: inset 4.26875px 4.26875px 2.84583px #C5C5C5, inset -4.26875px -4.26875px 2.84583px #FFFFFF;
+  border-radius: 21.3438px;
+}
+
+.ikonKasus{
+  width: 50px;
+  height: 50px;
+}
+
+.tabelku{
+  table-layout: fixed;
+}
+.table1{
+  position: relative;
+  
+  width: 1067px;
+  height: 100%;
+  left: 260px;
+  top: 50.38px;
+  /* padding: 0 22px; */
+
+  background: #F1F3F6;
+  box-shadow: -11.3833px -11.3833px 28.4583px #FFFFFF, 4.26875px 4.26875px 28.4583px #C5C5C5;
+  border-radius: 21.3438px;
+}
+/* 
+.table{
+  text-align: center;
+} */
+
+.table2{
+  padding: 0 20px;
+}
+
+.persebaran{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+
+.topTable{
+  position: relative;
+  float: none;
+  padding: 15px 0;
+  background: #5DA2D5;
+  /* margin-top: 20px; */
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  
+}
+
+.search{
+  float: right;
+}
+
+.floatKasus{
+  float: left;
+}
+
+.floatIcon{
+  float: right;
+}
+
+img#imgProfil{
+  width: 94px;
+}
+ 
+img.imgBawah{
+  width: 40px;
+}
+
+.wadudu{
+  background-color: #F1F1F1;
+}
+
+
+.contentWadudu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: inline-block; */
+}
+
+/* .txt-user,.txt-user-count{
+  display: inline-block;
+} */
+
+/* .txt-user-count{
+  display: inline-block;
+} */
+
+.row#rowTable{
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+ 
+.vCenter{
+  position: relative;
+  top: 20%;
+}
+
+
+
+@media (max-width: 990px) {
+  .side{
+    /* width: 70px;
+    left: 0px;
+    top: 0px;
+    background: #5DA2D5;
+    box-shadow: 0px 2.84583px 28.4583px #C5C5C5;
+  
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden; */
+  }
+
+  .menu{
+    background: red;
+    position: fixed;
+    height: 100%;
+    width: 60px;
+    margin-top: 50px;
+  }
+
+  #profil{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    left: 0px;
+    top: 20px;
+  justify-content: center;
+  align-items: center;
+    box-shadow: inset -4px -4px 12px #70B8EE, inset 2px 2px 14px #557C8C;
+  }
+
+  img#imgProfil{
+    width: 60px;
+    margin-left: 1px;
+  } 
+  
+}
+
+
+@media (max-width: 1070px) {
+  .kasusIndo {
+    font-size: 38.4979px;
+  }
+}
