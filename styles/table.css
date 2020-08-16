@@ -2,16 +2,18 @@
   margin-top: 20px;
   overflow: scroll;
   height: 400px;
-  color: #6a5d5d;
-}
-
+  
+} 
+/* 
 .tableku tr{
   display: flex;
   justify-content: space-between;
-}
+  border: none;
+} */
 
 .tableku td{
   padding: 0.5rem;
+  border: none;
 }
 
 .tableku tr:nth-of-type(odd){
