@@ -1,6 +1,6 @@
 import React from 'react'
 import { Layout, Menu } from 'antd';
-import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons';
+import { EnvironmentOutlined,DashboardOutlined } from '@ant-design/icons';
 import Link from 'next/link'
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -26,16 +26,16 @@ const SideCompDew = (props) => {
             <div className="imgProfil">
                 <img id="imgProfil" src="https://res.cloudinary.com/dewaqintoro/image/upload/v1596626011/icon/bx_bxs-user-circle_kfbclt.png"/>
             </div>
-            {/* <p id="username" style={{textalign: "center"}}>Dewa Qintoro</p>
-            <p id="id" style={{textalign: "center"}}>ID:20201161</p> */}
+            <p id="username" style={{textalign: "center"}}>Dewa Qintoro</p>
+            <p id="id" style={{textalign: "center"}}>ID:20201161</p>
           </div>
           <Menu mode="inline" defaultSelectedKeys={props.aktif}>
-            <Menu.Item key="1" icon={<UserOutlined />}>
+            <Menu.Item key="1" icon={<DashboardOutlined />}>
               <Link href="/admin">
                 Dashboard 
               </Link>
             </Menu.Item>
-            <Menu.Item key="2" icon={<VideoCameraOutlined />}>
+            <Menu.Item key="2" icon={<EnvironmentOutlined />}>
               <Link href="/persebaran">
                 Persebaran
               </Link>
