@@ -3,10 +3,18 @@ import { Form, Input, Button, Checkbox } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { connect } from 'react-redux';
+
+import AuthGoogle from './components/googleAuth'
+
+ 
+
+const LoginDew = (props,state) => {
 
 
+  // console.log("ini props page login",props)
+  // console.log("ini state",state)
 
-const LoginDew = () => {
   const router = useRouter()
   const onFinish = values => {
     // console.log('Received values of form: ', values.username);
@@ -29,6 +37,8 @@ const LoginDew = () => {
   return (
     <div className="formDew">
 
+
+    <AuthGoogle/>
      
     <Form
       name="normal_login"
@@ -91,4 +101,4 @@ const LoginDew = () => {
 }
 
 
-export default LoginDew
+export default connect() (LoginDew)

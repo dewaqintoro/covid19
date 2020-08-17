@@ -7,13 +7,13 @@ export const serverRenderClock = () => (dispatch) =>
     payload: { light: false, ts: Date.now() },
   })
 
-const authAxios = axios.create({
-    headers: {
-      "content-type": "application/json",
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Headers":"Origin, X-Requested-With, Content-Type, Accept"
-    }
-  }) 
+// const authAxios = axios.create({
+//     headers: {
+//       "content-type": "application/json",
+//       "Access-Control-Allow-Origin": "*",
+//       "Access-Control-Allow-Headers":"Origin, X-Requested-With, Content-Type, Accept"
+//     }
+//   }) 
 
  
 export const getCovidsList = () => {
@@ -28,7 +28,7 @@ export const getCovidsList = () => {
           payload: {
             data: response.data,
             errorMessage: false
-          }
+          } 
         })
       })
       .catch(function (error) {
@@ -46,7 +46,7 @@ export const getCovidsList = () => {
 
 export const getCovidIndo = () => {
   return (dispatch) => {
-    authAxios.get('https://api.kawalcorona.com/indonesia/') 
+    axios.get('https://api.kawalcorona.com/indonesia/') 
 
       .then(function (response) {
         // console.log("action indo",response);
@@ -73,7 +73,7 @@ export const getCovidIndo = () => {
 
 export const getCovidPositif2 = () => {
   return (dispatch) => {
-    authAxios.get('https://api.kawalcorona.com/positif') 
+    axios.get('https://api.kawalcorona.com/positif') 
 
       .then(function (response) {
         // console.log("action positif",response);
@@ -154,6 +154,21 @@ export const getCovidPositif = () => {
   }
 }
 
+
+export const signIn = (userId) => {
+  return {
+    type: types.SIGN_IN,
+    payload: userId,
+  };
+};
+
+export const signOut = () => {
+  return {
+    type: types.SIGN_OUT,
+  };
+};
+
+ 
  
 // INITIALIZES CLOCK ON CLIENT
 export const startClock = () => (dispatch) =>

@@ -22,7 +22,7 @@ import CardContDew from './containers/CardContDew';
 import { Card, Button, CardTitle, CardText } from 'reactstrap';
 import { getCovidsList,getCovidIndo,getCovidPositif,getCovidSembuh } from '../actions';
 
-
+ 
  
 class Kasus extends Component {
    

@@ -48,6 +48,11 @@ let initialState = {
 
 }
 
+const INITIAL_STATE_AUTH = {
+  isSignedIn: null,
+  userId: null,
+};
+
 const covidsReducer = (state = initialState, action) => {
   switch (action.type) {
     case types.GET_COVIDS_LIST:
@@ -78,9 +83,21 @@ const covidsReducer = (state = initialState, action) => {
         errorCovidSembuh: action.payload.errorMessage
       }
 
-
+ 
     default:
       return state
+  }
+}
+ 
+// AUTH REDUCER
+const authReducer = (state = INITIAL_STATE_AUTH, action) => {
+  switch (action.type) {
+    case types.SIGN_IN:
+      return { ...state, isSignedIn: true, userId: action.payload };
+    case types.SIGN_OUT:
+      return { ...state, isSignedIn: false, userId: null };
+    default:
+      return state;
   }
 }
 
@@ -89,6 +106,7 @@ const reducers = {
   counter: counterReducer,
   timer: timerReducer,
   covids: covidsReducer,
+  auth: authReducer,
 }
 
 export default combineReducers(reducers)
