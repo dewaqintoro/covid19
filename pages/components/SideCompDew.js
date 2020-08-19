@@ -19,7 +19,7 @@ const SideCompDew = (props) => {
 
   return (
     <>
-              <Sider
+        <Sider
           breakpoint="lg" 
           collapsedWidth="0"
           onBreakpoint={broken => {

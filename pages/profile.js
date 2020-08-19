@@ -15,29 +15,43 @@ class Profile extends Component {
       <SideCompDew aktif="3"/>
       <Layout>
         <Content style={{ margin: '24px 16px 0' }}>
-          <div className="site-layout-background" style={{ padding: 24, minHeight: 760 }}>
+          <div className="site-layout-background" style={{ padding: 0, minHeight: 760 }}>
             <div className="content_profile">
             <Row>
-              <Col className="left_profile" span={8}>
-              <div className="card_profile">
-                <img src="bg.jpg" className="card_profil-img"/>
-                <img src="pp.jpg" className="profile-img"/>
-                {/* <input className="btnDew" type="file" id="myFile" name="filename"/> */}
-                <h1>Dewa qintoro</h1>
-                <p className="job-title">Web Developer</p>
-                <p className="about">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis veniam fuga accusantium, autem explicabo, ex vitae est .
-                </p>
-                <a href="#" className="btn">Contact</a>
-                {/* <ul className="social-media">
-                  <li><a href=""><i className="fab fa-facebook-square"></i></a></li>
-                  <li><a href=""><i className="fab fa-twitter-square"></i></a></li>
-                  <li><a href=""><i className="fab fa-instagram"></i></a></li>
-                  <li><a href=""><i className="fab fa-google-plus-square"></i></a></li>
-                </ul> */}
-              </div>
+              <Col className="left_profile" span={7}>
+                <div className="card_profile">
+                  <img src="bg.png" className="card_profil-img"/>
+                  <img src="pp.png" className="profile-img"/>
+                  {/* <input className="btnDew" type="file" id="myFile" name="filename"/> */}
+                  <h1>Dewa Qintoro</h1>
+                  <p className="idProfile">1234567890987654321</p>
+                  <div className="about">
+                    <h1>About</h1>
+                    <hr style={{height: 3,background:'blue'}}></hr>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis veniam fuga accusantium, autem explicabo, ex vitae est .lorem10Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis veniam fuga accusantium, autem explicabo, ex vitae est 
+                    </p>
+                  </div>
+                  {/* <a href="#" className="btn">Contact</a> */}
+                  {/* <ul className="social-media">
+                    <li><a href=""><i className="fab fa-facebook-square"></i></a></li>
+                    <li><a href=""><i className="fab fa-twitter-square"></i></a></li>
+                    <li><a href=""><i className="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i className="fab fa-google-plus-square"></i></a></li>
+                  </ul> */}
+                </div>
               </Col>
-              <Col span={16}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae odio quis similique cupiditate nulla. Repellendus, quasi non ipsam, veniam tempora hic incidunt cumque assumenda, soluta praesentium odit! Doloremque, fugit? Unde iusto reprehenderit tenetur? Mollitia laudantium vero aut fugit, fuga tenetur cupiditate in enim blanditiis nisi repellendus similique! Veniam ipsum odio, saepe maxime est, aspernatur delectus quis vitae doloremque aut quae iusto labore expedita facere illo molestias similique ad culpa cum repellat eaque quibusdam laudantium ullam. Quasi blanditiis ex deserunt beatae laudantium dicta cum harum rerum quaerat eius architecto obcaecati assumenda, quam dolor molestiae dignissimos quod doloremque cumque laboriosam molestias. Molestiae?</Col>
+
+              <Col className="right_profile" span={17}>
+                <div className="detailsProfile">
+                  <div className="topTable">
+                    <div className="">
+                      <h5>Data Kasus Coronavirus di Indonesia Berdasarkan Provinsi</h5>
+                      <hr/>
+                    </div>
+                  </div>
+                </div>
+              </Col>
             </Row>
             </div>
           </div> 
