@@ -6,11 +6,12 @@ import dynamic from 'next/dynamic'
 const DynamicComponent = dynamic(() => import('../public/api'))
 
 import 'antd/dist/antd.css'
+
 // import '../styles/dashboard.css'
-import '../styles/dew.css'
 // import '../styles/global.css'
 import React, { useState,useEffect } from 'react'
- 
+
+import '../styles/dew.css'
 import '../styles/card.css'
 import '../styles/card_profile.css'
 import '../styles/table.css'
@@ -18,7 +19,6 @@ import '../styles/infoBox.css'
 import '../styles/mapku.css'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'https://use.fontawesome.com/releases/v5.6.3/css/all.css';
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 import '../styles/Login.css'
 // import * as Leaflet from 'react-leaflet'
@@ -33,6 +33,7 @@ import '../styles/Login.css'
 //       leaflet = require('leaflet');
 //       // import leaflet from 'leaflet'
 //   }
+import '../styles/coba.css'
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {

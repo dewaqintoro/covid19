@@ -8,10 +8,13 @@ import SideCompDew from './components/SideCompDew';
  import Kasus from './kasus'
 import { connect } from 'react-redux';
 import { useRouter } from 'next/router'
-import Sidedua from "./coba/sidedua";
 
 const AdminPage = ({ dispatch, isSignedIn, userId }) => {
   const router = useRouter()
+  // if (isSignedIn === null) {
+  //   router.push('/')
+  // }
+ 
   const [auth, setAuth] = useState(null);
 
   useEffect(() => {
@@ -64,26 +67,32 @@ const AdminPage = ({ dispatch, isSignedIn, userId }) => {
       // return <button onClick={onSignInClick}>Sign In with Google</button>;
     }
   }; 
-  
  
-  return (
-    <Layout style={{ minHeight: '100vh' }}>
-      <Sidedua/>
-      {/* <div className="logoutDew">
-        <button className="btnLogoutDew" onClick={onSignOutClick}>
-        <img className="imgBawah" src="https://res.cloudinary.com/dewaqintoro/image/upload/v1596626011/icon/mdi_power_settings_new_z0g0h1.png"/>
-        </button>
-      </div> */}
-      <Layout className="site-layout">
-        <Content style={{ margin: '0 16px' }}>
-          <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
 
-          <Kasus/>
+  return (
+    <div>
+    <Layout> 
+      <SideCompDew aktif="1"/>
+      <Layout>
+      <div className="userDew">
+              {/* <span>{userId}</span> */}
+              <div className="logoutDew">
+                <button className="btnLogoutDew" onClick={onSignOutClick}>
+                <img className="imgBawah" src="https://res.cloudinary.com/dewaqintoro/image/upload/v1596626011/icon/mdi_power_settings_new_z0g0h1.png"/>
+                </button>
+              </div>
+            </div>
+        <Content style={{ margin: '24px 16px 0' }}>
+          <div className="site-layout-background" style={{ padding: 24, minHeight: 760 }}>
+          <div>
+            
+       </div>
+            <Kasus/>
           </div>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
       </Layout>
     </Layout>
+  </div>
   )
 }
 

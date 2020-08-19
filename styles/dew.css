@@ -326,10 +326,10 @@ color: #000000;
 }
 
 .logoutDew{
-  position: absolute;
+  position: relative;
   margin-top: 600px;
   /* background: red; */
-  margin-left: -120px;
+  margin-left: 120px;
 }
 
 .btnLogoutDew{

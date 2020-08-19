@@ -3,6 +3,8 @@ import { useDispatch } from 'react-redux'
 import Link from 'next/link'
 
 import LoginDew from './login';
+import Side from './coba/side';
+import Sidedua from './coba/sidedua';
 
 
 const Index = () => {
@@ -10,7 +12,7 @@ const Index = () => {
   // useEffect(() => {
   //   console.log('window.innerHeight', window.innerHeight);
   // })
-
+ 
   return (
     // <>
     //   <Examples />
@@ -21,6 +23,9 @@ const Index = () => {
     <div className="loginku">
       <LoginDew/>
     </div>
+    // <div>
+    //   <Sidedua/>
+    // </div>
   )
 }
 
