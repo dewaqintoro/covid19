@@ -12,11 +12,13 @@ import '../styles/dew.css'
 import React, { useState,useEffect } from 'react'
  
 import '../styles/card.css'
+import '../styles/card_profile.css'
 import '../styles/table.css'
 import '../styles/infoBox.css' 
 import '../styles/mapku.css'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'https://use.fontawesome.com/releases/v5.6.3/css/all.css';
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 import '../styles/Login.css'
 // import * as Leaflet from 'react-leaflet'
@@ -56,6 +58,7 @@ export default function App({ Component, pageProps }) {
         <title>dewMy page title</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/>
         {/* <script src="https://apis.google.com/js/api.js"></script> */}
         <script src="api.js"></script>
 

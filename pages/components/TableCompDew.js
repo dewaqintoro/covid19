@@ -38,7 +38,7 @@ const defaultSorted = [{
 }];
 
 const mapStateToProps = (state) => {
-  console.log("state tabel provinsi",state.covids.getCovidPositif.data)
+  // console.log("state tabel provinsi",state.covids.getCovidPositif.data)
   return {
     getCovidsList: state.covids.getCovidPositif.data,
     errorCovidsList: state.covids.errorCovidsList
@@ -47,7 +47,7 @@ const mapStateToProps = (state) => {
 
 
 const TableCompDew = (props) => {
-  console.log("tabel",props);
+  // console.log("tabel",props);
   
   return (
     <>

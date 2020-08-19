@@ -20,9 +20,9 @@ export const getCovidsList = () => {
   return (dispatch) => {
     // axios.get('http://localhost:3004/covids') 
     // authAxios.get(`https://api.kawalcorona.com/indonesia/provinsi/`) 
-    axios.get(`https://api.kawalcorona.com/indonesia/provinsi/`) 
+    axios.get(``) 
       .then(function (response) {
-        console.log("action prov",response.data);
+        // console.log("action prov",response.data);
         dispatch({
           type: types.GET_COVIDS_LIST,
           payload: {
@@ -46,7 +46,9 @@ export const getCovidsList = () => {
 
 export const getCovidIndo = () => {
   return (dispatch) => {
-    axios.get('https://api.kawalcorona.com/indonesia/') 
+    // axios.get('https://api.kawalcorona.com/indonesia/') 
+    axios.get('') 
+
 
       .then(function (response) {
         // console.log("action indo",response);
@@ -73,10 +75,12 @@ export const getCovidIndo = () => {
 
 export const getCovidPositif2 = () => {
   return (dispatch) => {
-    axios.get('https://api.kawalcorona.com/positif') 
+    // axios.get('https://api.kawalcorona.com/positif') 
+    axios.get('') 
+
 
       .then(function (response) {
-        // console.log("action positif",response);
+        console.log("action positif",response);
         dispatch({
           type: types.GET_COVID_POSITIF,
           payload: {
@@ -132,7 +136,7 @@ export const getCovidPositif = () => {
     axios.get('https://indonesia-covid-19.mathdro.id/api/provinsi') 
 
       .then(function (response) {
-        console.log("provinsi",response);
+        // console.log("provinsi",response);
         dispatch({
           type: types.GET_COVID_POSITIF,
           payload: {

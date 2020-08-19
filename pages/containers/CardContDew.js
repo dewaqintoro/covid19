@@ -6,7 +6,7 @@ import CardIndo from '../components/CardIndo';
  
 
 const mapStateToProps = (state) =>{
-  console.log("state cardContainer wadudu ",state)
+  // console.log("state cardContainer wadudu ",state)
   return{
     getCovidPositif: state.covids.getCovidPositif,
     errorCovidPositif: state.covids.errorCovidPositif,
@@ -21,7 +21,7 @@ class CardContDew extends Component {
     // console.log("wadudu ",this.props)
     const positif = this.props.getCovidPositif
     const sembuh = this.props.getCovidSembuh
-    console.log("wadudu positif",sembuh)
+    // console.log("wadudu positif",sembuh)
     return (
       <> 
         <CardIndo id="idIndo" ikon="https://res.cloudinary.com/dewaqintoro/image/upload/v1596616012/icon/sad_mblguq.png"/> 

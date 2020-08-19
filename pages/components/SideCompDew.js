@@ -3,10 +3,20 @@ import { Layout, Menu } from 'antd';
 import { EnvironmentOutlined,DashboardOutlined } from '@ant-design/icons';
 import Link from 'next/link'
 const { Header, Content, Footer, Sider } = Layout;
-
-
+import { connect } from 'react-redux';
+import { useRouter } from 'next/router'
 
 const SideCompDew = (props) => {
+  console.log("props userid side =>", props.userId)
+
+  const router = useRouter()
+  const  onSignOutClick = () => {
+    auth.signOut();
+    // await router.push('/')
+    console.log("berhasil logout v1");
+    
+  };
+
   return (
     <>
               <Sider
@@ -27,7 +37,7 @@ const SideCompDew = (props) => {
                 <img id="imgProfil" src="https://res.cloudinary.com/dewaqintoro/image/upload/v1596626011/icon/bx_bxs-user-circle_kfbclt.png"/>
             </div>
             <p id="username" style={{textalign: "center"}}>Dewa Qintoro</p>
-            <p id="id" style={{textalign: "center"}}>ID:20201161</p>
+            <p id="id" style={{textalign: "center"}}>{props.userId}</p>
           </div>
           <Menu mode="inline" defaultSelectedKeys={props.aktif}>
             <Menu.Item key="1" icon={<DashboardOutlined />}>
@@ -40,24 +50,24 @@ const SideCompDew = (props) => {
                 Persebaran
               </Link>
             </Menu.Item>
-            {/* <Menu.Item key="3" icon={<UploadOutlined />}>
-              nav 3 
+            <Menu.Item key="3" icon={<EnvironmentOutlined />}>
+              <Link href="/profile">
+                Profile
+              </Link>
             </Menu.Item>
-            <Menu.Item key="4" icon={<UserOutlined />}>
-              nav 4
-            </Menu.Item> */}
+
             <div className="bawahContainer">
-            <Link href="/setting">
+            {/* <Link href="/setting">
               <div className="bawah" id="setting">
                   <img className="imgBawah" src="https://res.cloudinary.com/dewaqintoro/image/upload/v1596626011/icon/mdi_settings_hvxc7l.png"/>
               </div>
-            </Link>
+            </Link> */}
 
-            <Link href="/">
+            {/* <Link href="/">
               <div className="bawah" id="logout">
                   <img className="imgBawah" src="https://res.cloudinary.com/dewaqintoro/image/upload/v1596626011/icon/mdi_power_settings_new_z0g0h1.png"/>
               </div>
-            </Link>
+            </Link> */}
             </div>
           </Menu>
         </Sider>
@@ -65,6 +75,10 @@ const SideCompDew = (props) => {
   ) 
 } 
 
-export default SideCompDew
+const mapStateToProps = (state) => {
+  return { isSignedIn: state.auth.isSignedIn, userId: state.auth.userId };
+};
+
+export default connect(mapStateToProps) (SideCompDew)
 
 

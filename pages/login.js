@@ -30,7 +30,7 @@ const LoginDew = (props,state) => {
       wadudu="2"
       history.push('/app');
 		}else{
-      alert("user tidak ada")
+      // alert("user tidak ada")
       wadudu="4"
     }
   };
@@ -38,7 +38,7 @@ const LoginDew = (props,state) => {
     <div className="formDew">
 
 
-    <AuthGoogle/>
+    
      
     <Form
       name="normal_login"
@@ -51,19 +51,20 @@ const LoginDew = (props,state) => {
     >
       <Form.Item className="formAuth">
         <h1>Login</h1>
-        <a href="">
+        <AuthGoogle/> 
+        {/* <a href="">
           <img className="iconGoogle" src="https://res.cloudinary.com/dewaqintoro/image/upload/v1597328370/icon/flat-color-icons_google_bbhrbd.png"/>
         </a>
         <a href="">
           <img src="https://res.cloudinary.com/dewaqintoro/image/upload/v1597328370/icon/fa-brands_facebook_dicqlm.png"/>
-        </a>
+        </a> */}
         <p className="yourAccount">Or use your account</p>
       </Form.Item>
       <Form.Item
         name="username"
         rules={[
           {
-            required: true,
+            required: false,
             message: 'Please input your Username!',
           },
         ]}
@@ -74,7 +75,7 @@ const LoginDew = (props,state) => {
         name="password"
         rules={[
           {
-            required: true,
+            required: false,
             message: 'Please input your Password!',
           },
         ]}

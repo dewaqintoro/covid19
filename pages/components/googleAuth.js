@@ -47,7 +47,7 @@ const DewGoogleAuth = ({ dispatch, isSignedIn, userId }) => {
   const router = useRouter()
   const renderAuthButton = () => {
     if (isSignedIn === null) {
-      return null;
+      return null; 
     } else if (isSignedIn) {
       console.log("sudah login")
       router.push('/admin')
@@ -59,7 +59,13 @@ const DewGoogleAuth = ({ dispatch, isSignedIn, userId }) => {
       // );
     } else {
       console.log("Belum login")
-      return <button onClick={onSignInClick}>Sign In with Google</button>;
+      return (
+        <>
+          <button className="btnGoogle" onClick={onSignInClick}>
+            <img className="iconGoogle" src="https://res.cloudinary.com/dewaqintoro/image/upload/v1597328370/icon/flat-color-icons_google_bbhrbd.png"/>
+          </button>;
+        </>
+      )
     }
   };
 

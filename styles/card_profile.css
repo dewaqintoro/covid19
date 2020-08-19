@@ -1,0 +1,69 @@
+.content_profile{
+	display: flex;
+}
+
+.left_profile{
+	/* background-color: rgb(155, 155, 155); */
+}
+
+
+.card_profile{
+	width: 100%;
+	background-color: #ebeef8;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 2rem 0;
+	box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+	border-radius: 10px;
+}
+
+.card_profil-img{
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	clip-path: polygon(0 0, 100% 0, 100% 71%, 0% 100%);
+	border-radius: 10px 10px 0px 0px;
+
+}
+
+.profile-img{
+	width: 120px;
+	height: 120px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-top: -8vh;
+	z-index: 999;
+	border: 10px solid #ebeef8;
+}
+
+.btnDew{
+	margin-top: -6vh;
+	z-index: 999;
+}
+.card_profil h1{
+	font-size: 2.5rem;
+	color: #333;
+	margin: 1.5rem 0;
+}
+
+.job-title{
+	color: #777;
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+.about{
+	/* font-size: 1.5rem; */
+	/* margin: 1px 0; */
+	font-style: italic;
+	text-align: center;
+	color: #333;
+}
+
+@media (max-width: 990px) {
+  /* .content_profile{
+		display: block;
+	} */
+}

@@ -59,6 +59,22 @@ body{
   height: 48px;
 }
 
+.btnGoogle{
+  background: transparent;
+  border: none;
+  /* width: 25%; */
+  /* height: 48px; */
+  border-radius: 50px; 
+}
+
+.btnLogout{
+  background: transparent;
+  border: none;
+  /* width: 25%; */
+  /* height: 48px; */
+  border-radius: 50px; 
+}
+
 .iconAuth{
   height: 20px;
   background: red;
@@ -107,3 +123,4 @@ body{
 .kekLogin{
   cursor: pointer;
 }
+

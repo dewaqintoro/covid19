@@ -31,7 +31,7 @@ class Kasus extends Component {
     this.props.dispatch(getCovidIndo());
     this.props.dispatch(getCovidPositif())
     this.props.dispatch(getCovidSembuh())
-    console.log("covid provinsi",this.props.dispatch(getCovidPositif()));
+    // console.log("covid provinsi",this.props.dispatch(getCovidPositif()));
  } 
   render() {
     return (

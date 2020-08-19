@@ -70,7 +70,7 @@ p#id{
   position: relative;
   width: 81.11px;
   height: 16.36px;
-  left: 0%;
+  left: -30%;
   top: 0px;
 
   font-family: Roboto;
@@ -321,6 +321,21 @@ color: #000000;
   /* height: 300px !important; */
 }
 
+.userDew{
+  float: right;
+}
+
+.logoutDew{
+  position: absolute;
+  margin-top: 600px;
+  /* background: red; */
+  margin-left: -120px;
+}
+
+.btnLogoutDew{
+  background: transparent;
+  border: none;
+}
 
 @media only screen and (min-width: 1070px) {
   .kasusIndo{
