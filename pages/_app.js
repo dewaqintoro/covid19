@@ -3,7 +3,7 @@ import { useStore } from '../store'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 
-const DynamicComponent = dynamic(() => import('../public/api'))
+// const DynamicComponent = dynamic(() => import('../public/api'))
 
 import 'antd/dist/antd.css'
 
@@ -60,8 +60,8 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/>
-        {/* <script src="https://apis.google.com/js/api.js"></script> */}
-        <script src="api.js"></script>
+        <script src="https://apis.google.com/js/api.js"></script>
+        {/* <script src="api.js"></script> */}
 
       </Head>
       {console.log("ini store",store)}
