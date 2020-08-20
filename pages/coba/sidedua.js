@@ -35,7 +35,9 @@ class Sidedua extends Component {
     return (
       <>
         <Sider collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}>
-          <div className="logo" />
+          <h5 style={{textAlign: "center", paddingTop: 20}}>CVD19</h5>
+          <hr style={{height: 2,background: "black"}}/>
+          <div className="menuSideBar">
           <Menu mode="inline" defaultSelectedKeys={this.props.aktif}>
             <Menu.Item key="1" icon={<DashboardOutlined />}>
               <Link href="/admin">
@@ -52,14 +54,14 @@ class Sidedua extends Component {
                 Profile
               </Link>
             </Menu.Item>
-
+            
             <div className="bawahContainer">
             {/* <Link href="/setting">
               <div className="bawah" id="setting">
                   <img className="imgBawah" src="https://res.cloudinary.com/dewaqintoro/image/upload/v1596626011/icon/mdi_settings_hvxc7l.png"/>
               </div>
             </Link> */}
-
+ 
             {/* <Link href="/">
               <div className="bawah" id="logout">
                   <img className="imgBawah" src="https://res.cloudinary.com/dewaqintoro/image/upload/v1596626011/icon/mdi_power_settings_new_z0g0h1.png"/>
@@ -67,6 +69,7 @@ class Sidedua extends Component {
             </Link> */}
             </div>
           </Menu>
+          </div>
         </Sider>
         </>
     )

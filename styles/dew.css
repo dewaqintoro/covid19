@@ -265,7 +265,7 @@ color: #000000;
   overflow-y: auto;
   overflow-x: auto;
 }
-
+ 
 .topTable{
   position: relative;
   float: none;
@@ -330,6 +330,23 @@ color: #000000;
   margin-top: 600px;
   /* background: red; */
   margin-left: 120px;
+}
+
+
+.menuSideBar{
+  margin-top: 30px;
+}
+
+.menuSideBar ul.ant-menu li.ant-menu-item{
+  color: white !important;
+}
+
+.menuSideBar ul.ant-menu li.ant-menu-item:hover{
+  color: black !important;
+}
+
+.menuSideBar ul.ant-menu li.ant-menu-item a{
+  color: white ;
 }
 
 .btnLogoutDew{

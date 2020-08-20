@@ -5,11 +5,11 @@
 .left_profile{
 	/* background-color: rgb(155, 155, 155); */
 }
-
+ 
 
 .card_profile{
 	width: 100%;
-	background-color: #ebeef8;
+	background-color: white;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -38,6 +38,9 @@
 	border: 6px solid #ebeef8;
 }
 
+.profile-img img{
+	border: 20px solid red;
+}
 .btnDew{
 	margin-top: -6vh;
 	z-index: 999;
@@ -70,9 +73,8 @@
  
 .right_profile{
 	position: relative;
-	padding-left: 5px;
 	
-	padding-left: 10px;
+	padding-left: 20px;
 }
 .detailsProfile{
 	background: white;
@@ -95,6 +97,9 @@
 	padding: 10px 20px 40px 20px;
 }
 
+img{
+	border: none;
+}
 @media (max-width: 990px) {
   /* .content_profile{
 		display: block;

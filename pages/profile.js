@@ -6,9 +6,12 @@ import { Card,Row, Col } from 'antd';
 const { Meta } = Card;
 import Sidedua from "./coba/sidedua";
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
+import UploadDew from "./upload";
 
 
 class Profile extends Component {
+
+
   render() {
     console.log("props side dua2",this.props.aktif)
   return (
@@ -19,41 +22,39 @@ class Profile extends Component {
         <img className="imgBawah" src="https://res.cloudinary.com/dewaqintoro/image/upload/v1596626011/icon/mdi_power_settings_new_z0g0h1.png"/>
         </button>
       </div> */}
-      <Layout className="site-layout">
+      <Layout className="site-layout"> 
         <Content style={{ margin: '0 16px' }}>
-          <div className="site-layout-background" style={{ padding: 24, minHeight: 360,background: "transparent" }}>
+          <div className="site-layout-background" style={{paddingTop: 20, minHeight: 360,background: "transparent" }}>
 
             {/* konten */}
             <div className="content_profile">
             <Row>
               <Col className="left_profile" span={7}>
-                <div className="card_profile">
+              <UploadDew/>
+
+                {/* <div className="card_profile">
                   <img src="bg.png" className="card_profil-img"/>
                   <img src="pp.png" className="profile-img"/>
-                  {/* <input className="btnDew" type="file" id="myFile" name="filename"/> */}
-                  <h1>Dewa Qintoro</h1>
+                  <input className="btnDew" type="file" id="myFile" name="filename"/>
+                  <UploadDew/>
+                  <h1>Dewa Qintoro</h1> 
                   <p className="idProfile">1234567890987654321</p>
                   <div className="about">
-                    <h1>About</h1>
-                    <hr style={{height: 3,background:'blue'}}></hr>
+                    <h3 style={{fontWeight: "bold"}}>About</h3>
+                    <hr style={{height: 3,background:'blue'}}/>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis veniam fuga accusantium, autem explicabo, ex vitae est .lorem10Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis veniam fuga accusantium, autem explicabo, ex vitae est 
                     </p>
                   </div>
-                  {/* <a href="#" className="btn">Contact</a> */}
-                  {/* <ul className="social-media">
-                    <li><a href=""><i className="fab fa-facebook-square"></i></a></li>
-                    <li><a href=""><i className="fab fa-twitter-square"></i></a></li>
-                    <li><a href=""><i className="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i className="fab fa-google-plus-square"></i></a></li>
-                  </ul> */}
-                </div>
+                </div> */}
+
+
               </Col>
   
               <Col className="right_profile" span={17}>
                 <div className="detailsProfile">
                   <div className="head_profile">
-                      <h5>Data Kasus Coronavirus di Indonesia Berdasarkan Provinsi</h5>
+                      <h5 style={{marginLeft:20,color:"white"}}>Details</h5>
                       <hr/>
                   </div>
 
