@@ -119,7 +119,7 @@ class UploadDew extends Component {
           <h1>Dewa Qintoro</h1> 
           <p className="idProfile">1234567890987654321</p>
           {/* <p>access_token: {access_token}</p> */}
-          <Persist dewaaaa={this.state.userProfilePic}/>
+          {/* <Persist dewaaaa={this.state.userProfilePic}/> */}
           <div className="about">
             <h3 style={{fontWeight: "bold"}}>About</h3>
             <hr style={{height: 3,background:'blue'}}/>
