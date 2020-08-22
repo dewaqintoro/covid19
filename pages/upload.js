@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import ImageCrop from './library/imageCrop';
 import { Modal, Button } from 'antd';
 import { UserOutlined, LockOutlined,EditOutlined } from '@ant-design/icons';
-import Persist from './persist';
+// import Persist from './persist';
 import Cookies from 'universal-cookie';
 
 class UploadDew extends Component {
