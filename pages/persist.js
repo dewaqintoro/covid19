@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Cookie from "js-cookie";
-import { parseCookies } from "./lib/parseCookies";
+import parseCookies from "./lib/parseCookies";
  
 const Persist = (props,{ initialRememberValue = true }) => {
   // console.log("cookie",initialRememberValue)
