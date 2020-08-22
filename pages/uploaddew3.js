@@ -2,20 +2,18 @@ import React, {Component} from 'react';
 import ImageCrop from './library/imageCrop';
 import { Modal, Button } from 'antd';
 import { UserOutlined, LockOutlined,EditOutlined } from '@ant-design/icons';
-import Persist from './persist';
-import Cookies from 'universal-cookie';
-
+// import Persist from './persist';
 class UploadDew extends Component {
 
  
-  //   constructor(props, context) {
-  //   super(props, context);
-  //   this.state = {
-  //     userProfilePic: this.state.userProfilePic,
-  //     editor: null,
-  //     scaleValue: 1,
-  //   };
-  // }
+    constructor(props, context) {
+    super(props, context);
+    this.state = {
+      userProfilePic: 'pp.png',
+      editor: null,
+      scaleValue: 1,
+    };
+  }
 
  
 
@@ -28,15 +26,6 @@ class UploadDew extends Component {
   };
 
   handleOk = e => {
-    // const cookies = new Cookies();
-    // const newPPPP = this.state.userProfilePic
-    // console.log("hmmmmm",newPPPP)
-    // cookies.set('access_token', "newPPPP", { path: '/' ,maxAge  :5000});
-    // console.log("hmmmmm v2",newPPPP)
-    // console.log(cookies.get('access_token'));
-    // const access_token = cookies.get('access_token')
-
-
     console.log(e);
     this.setState({
       visible: false,
@@ -69,16 +58,6 @@ class UploadDew extends Component {
     this.setState({ scaleValue });
   };
 
-  onRotateChange = (rotateChangeEvent) => {
-    const rotateValue =  parseFloat(rotateChangeEvent.target.value);
-    this.setState({ rotateValue });
-  };
-
-  onBorderRadiusChange = (borderChangeEvent) => {
-    const borderRadiusValue =  parseFloat(borderChangeEvent.target.value);
-    this.setState({ borderRadiusValue });
-  };
-
   DataURLtoFile = (dataurl, filename) => {
   let arr = dataurl.split(','),
     mime = arr[0].match(/:(.*?);/)[1],
@@ -100,12 +79,9 @@ class UploadDew extends Component {
     }
   };
   render(){ 
-    
- 
-
   return (
     <div className="">
-        {/* {console.log("lokasi gambar",this.state.userProfilePic)} */}
+        {console.log("lokasi gambar",this.state.userProfilePic)}
 
         <div>
           {/* <h1>Profile</h1> */}
@@ -118,8 +94,7 @@ class UploadDew extends Component {
           <Button style={{marginTop: -150,marginLeft: 60, position:"absolute", }} type="primary" shape="circle" icon={<EditOutlined />} onClick={this.showModal}/>
           <h1>Dewa Qintoro</h1> 
           <p className="idProfile">1234567890987654321</p>
-          {/* <p>access_token: {access_token}</p> */}
-          <Persist dewaaaa={this.state.userProfilePic}/>
+          {/* <Persist dewaaaa={this.state.userProfilePic}/> */}
           <div className="about">
             <h3 style={{fontWeight: "bold"}}>About</h3>
             <hr style={{height: 3,background:'blue'}}/>
@@ -133,11 +108,10 @@ class UploadDew extends Component {
 
 
         <Modal
-          title="Edit Photo"
+          title="Basic Modal"
           visible={this.state.visible}
           onOk={this.handleOk}
           onCancel={this.handleCancel}
-          centered={1}
         >
           <input type="file" name="profilePicBtn" accept="image/png, image/jpeg" onChange={this.profilePicChange} />
           <ImageCrop
@@ -145,13 +119,7 @@ class UploadDew extends Component {
           setEditorRef={this.setEditorRef}
           onCrop={this.onCrop}
           scaleValue={this.state.scaleValue}
-          rotateValue={this.state.rotateValue}
-          borderRadiusValue={this.state.borderRadiusValue}
           onScaleChange={this.onScaleChange}
-          onRotateChange={this.onRotateChange}
-          onBorderRadiusChange={this.onBorderRadiusChange}
-
-
         />
         </Modal>
 

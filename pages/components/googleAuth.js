@@ -61,9 +61,11 @@ const DewGoogleAuth = ({ dispatch, isSignedIn, userId }) => {
       console.log("Belum login")
       return (
         <>
+        <div className="loginGoogle2">
           <button className="btnGoogle" onClick={onSignInClick}>
             <img className="iconGoogle" src="https://res.cloudinary.com/dewaqintoro/image/upload/v1597328370/icon/flat-color-icons_google_bbhrbd.png"/>
-          </button>;
+          </button>
+        </div>
         </>
       )
     }

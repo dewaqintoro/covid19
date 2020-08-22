@@ -2,13 +2,38 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import AvatarEditor from 'react-avatar-editor';
 
-const ImageCrop = ({ imageSrc, onCrop, setEditorRef, scaleValue, onScaleChange }) => (
+const ImageCrop = ({ imageSrc, onCrop, setEditorRef, scaleValue,rotateValue,borderRadiusValue, onScaleChange,onRotateChange,onBorderRadiusChange }) => (
   <div>
       <div className="editorOverlayInner">
         <div className="editorModalContent clearfix">
           <div className="cropCnt">
-            <AvatarEditor image={imageSrc} border={50} scale={scaleValue} rotate={0} ref={setEditorRef} className="cropCanvas" />
-            <input style={{ width: '100%' }} type="range" value={scaleValue} name="points" min="1" max="10" onChange={onScaleChange} />
+            <AvatarEditor 
+            image={imageSrc} 
+            border={50} 
+            borderRadius={borderRadiusValue}
+            scale={scaleValue} 
+            rotate={rotateValue} 
+            ref={setEditorRef}
+            className="cropCanvas" 
+            />
+            <hr/>
+            <label>
+              Scale : 
+              <input style={{ width: '100%' }} type="range" value={scaleValue} name="scale" min="0" max="10" onChange={onScaleChange} />
+            </label>
+            <br/>
+            <label htmlFor="">
+              Rotate : 
+            <input style={{ width: '100%' }} type="range" value={rotateValue} name="rotate" min="0" max="360" onChange={onRotateChange} />
+            </label>
+            <br/>
+            <label htmlFor="">
+              Border Radius: 
+            <input style={{ width: '100%' }} type="range" value={borderRadiusValue} name="borderRadius" min="0" max="100" onChange={onBorderRadiusChange} />
+            </label>
+            <br/>
+
+            
             <button onClick={onCrop} className="editorOverlayCloseBtn crpBtn">
               Save
             </button>
