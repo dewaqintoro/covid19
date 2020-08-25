@@ -8,14 +8,14 @@ import Cookies from 'universal-cookie';
 class UploadDew extends Component {
 
  
-  //   constructor(props, context) {
-  //   super(props, context);
-  //   this.state = {
-  //     userProfilePic: this.state.userProfilePic,
-  //     editor: null,
-  //     scaleValue: 1,
-  //   };
-  // }
+  constructor(props, context) {
+    super(props, context);
+    this.state = {
+      userProfilePic: "pp.png",
+      editor: null,
+      scaleValue: 1,
+    };
+  }
 
  
 
@@ -28,13 +28,6 @@ class UploadDew extends Component {
   };
 
   handleOk = e => {
-    // const cookies = new Cookies();
-    // const newPPPP = this.state.userProfilePic
-    // console.log("hmmmmm",newPPPP)
-    // cookies.set('access_token', "newPPPP", { path: '/' ,maxAge  :5000});
-    // console.log("hmmmmm v2",newPPPP)
-    // console.log(cookies.get('access_token'));
-    // const access_token = cookies.get('access_token')
 
 
     console.log(e);
@@ -61,6 +54,7 @@ class UploadDew extends Component {
     if (editor !== null) {
       const url = editor.getImageScaledToCanvas().toDataURL();
       this.setState({ userProfilePic: url});
+      localStorage.setItem('urlIMG',url);
     }
   };
 
@@ -99,6 +93,15 @@ class UploadDew extends Component {
       this.setState({ openCropper: true, selectedImage: fileChangeEvent.target.files[0], fileUploadErrors: [] });
     }
   };
+
+
+  componentDidMount(){
+    let dataDew = localStorage.getItem('urlIMG')
+    // console.log('wadudu img',dataDew)
+    this.setState({dataDew})
+  }
+
+
   render(){ 
     
  
@@ -114,8 +117,13 @@ class UploadDew extends Component {
         </div>
         <div className="card_profile">
           <img src="bg.png" className="card_profil-img"/>
-          <img src={this.state.userProfilePic} className="profile-img"/>
+          {/* <img src={this.state.userProfilePic} className="profile-img"/> */}
+          {/* <img src={this.state.dataDew ? this.state.dataDew : this.state.userProfilePic} className="profile-img"/> */}
+          <img src={this.state.userProfilePic ==="pp.png" ? this.state.dataDew : this.state.userProfilePic} className="profile-img"/>
+
+
           <Button style={{marginTop: -150,marginLeft: 60, position:"absolute", }} type="primary" shape="circle" icon={<EditOutlined />} onClick={this.showModal}/>
+          
           <h1>Dewa Qintoro</h1> 
           <p className="idProfile">1234567890987654321</p>
           {/* <p>access_token: {access_token}</p> */}
